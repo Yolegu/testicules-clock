@@ -1,0 +1,17 @@
+#time {
+	text-align: center;
+	font-size: 20em;
+	margin-top: 20vh;
+	font-family: VT323;
+}
+
+#bellDiv {
+	text-align: center;
+}
+
+.bellImg {
+	height: 500px;
+	width: 500px;
+	left: 10px;
+	top: 0px;
+}
