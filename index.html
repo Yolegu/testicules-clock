@@ -6,7 +6,6 @@
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
-
 		  gtag('config', 'G-CE23SY65TP');
 		</script>
 		<meta charset="utf-8">
@@ -16,31 +15,33 @@
 
 	<body>
 
+		<script src="scripts.js"></script>
+
 		<div id="bellDiv">
 			<img class="bellImg" src="balls-no-background.png">
 		</div>
 
 		<script>
-			var img = document.querySelector( '.bellImg' ),
-				start = 0;
-			function sine(){
-			  img.style.transform = "rotate(" + 20 * Math.sin( start ) + "deg)";
-			  start += 0.05;
-			  setTimeout(sine, 1000/60)
-			}
-			setTimeout( sine, 3000 );
+			rotate_balls();
 		</script>
-
 
 		<div id="time"></div>
 		<script>
-			function refreshTime() {
-				const timeDisplay = document.getElementById("time");
-				const dateString = new Date().toLocaleTimeString();
-				timeDisplay.textContent = dateString;
-			}
-			refreshTime();
-			setInterval(refreshTime, 1000);
+			refresh_current_time()
+			current_time_button_click();
 		</script>
+
+		<div style="text-align: center; margin-top: 20vh;">
+			<button class="button-bottom" type="button" onclick="current_time_button_click()">
+				<input type="image" name="Hour" src="clock.svg" alt="text">  
+			</button>
+			<button class="button-bottom" type="button" onclick="time_since_click_button_click()">
+				<input type="image" name="Hour" src="chrono.svg" alt="text">  
+			</button>
+			<!-- <button class="button-bottom" type="button" >
+				<input type="image" name="Hour" src="pomodoro.svg" alt="text">  
+			</button> -->
+		</div>
+
 	</body>
 </html>
