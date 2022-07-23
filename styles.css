@@ -15,3 +15,10 @@
 	left: 10px;
 	top: 0px;
 }
+
+.button-bottom{
+	margin-right: 5vh; 
+	padding: 10px; 
+	border-radius: 10%; 
+	background-color: #FFF6F6;
+}
