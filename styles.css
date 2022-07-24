@@ -9,7 +9,7 @@
 	text-align: center;
 }
 
-.bellImg {
+#bellImg {
 	height: 300px;
 	width: 300px;
 	left: 10px;
@@ -21,4 +21,6 @@
 	padding: 10px; 
 	border-radius: 10%; 
 	background-color: #FFF6F6;
+	width: 8vh;
+	height: 8vh;
 }
